@@ -1,0 +1,11 @@
+version: '3'
+services:
+  lumen:
+    container_name: lumen
+    image: tasslin/php
+    working_dir: /var/www/project
+    volumes:
+      - .:/var/www/project
+    ports:
+      - "80:80"
+    restart: always
